@@ -45,11 +45,11 @@ handleDisconnect();
 
 // In-memory storage for votes (for simplicity)
 let votes = {
-    "Delice . ": 0,
-    "BENI. ": 0,
-    "LAURA. ": 0,
-    "ALAIN. ": 0,
-    "INEZA. ": 0
+    "Delice  ": 0,
+    "BENI ": 0,
+    "LAURA ": 0,
+    "ALAIN ": 0,
+    "INEZA ": 0
 };
 
 // In-memory storage for user data (for simplicity)
@@ -69,7 +69,7 @@ app.post('/ussd', (req, res) => {
     // Determine next action based on user input
     if (userInput.length === 1 && userInput[0] === '') {
         // First level menu: Language selection
-        response = `CON Welcome to Mayor voting booth\n`;
+        response = `CON Welcome to District Exective voting System\n`;
         response += `1. English\n`;
         response += `2. Kinyarwanda`;
     } else if (userInput.length === 1 && userInput[0] !== '') {
